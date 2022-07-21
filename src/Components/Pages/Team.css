@@ -1,65 +1,66 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.back,.front{
-	position: absolute;
+.back,
+.front {
+  position: absolute;
 }
 
-.card{
-	height :400px;
-	width: 320px;
-	perspective: 1000px;
-	color:white;
+.card {
+  height: 250px;
+  width: 50%;
+  perspective: 1000px;
 }
 
-.card-face{
-	height: 100%;
-	width: 100%;
-	text-align: center;
-	background-size: cover;
-	background-position: center;
-	border-radius: 2.5rem;
-	backface-visibility: hidden;
-	transition: transform 0.8s;
-	transform-style: preserve-3d;
+.card-face {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-.back{
-	transform: rotateY(180deg);
-	background-position: center !important;
-	text-align: center ;
-	background-size: cover !important;
+.back {
+  transform: rotateY(180deg);
+  background-position: center !important;
+  text-align: center;
+  background-size: cover !important;
+  /* filter: blur(5px); */
 }
 
-.back h2{
-	margin-top: 50%;
-	color: #dddddd;
-	font-size: 2.5rem;
-	letter-spacing: 1px;
+.back h2 {
+  margin-top: 50%;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 1px;
 }
-.back p{
-	margin-top: 2%;
-	color: #dddddd;
-	font-size: 1.2rem;
-	font-weight: 500;
-	letter-spacing: 1px;
-}
-
-.card:hover >.back{
-	transform: rotateY(0deg);
-}
-.card:hover >.front{
-	transform: rotateY(-180deg);
+.back p {
+  margin-top: 2%;
+  color: white;
+  font-size: 15px;
+  /* font-weight: 500; */
+  letter-spacing: 1px;
 }
 
-.team{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	grid-gap: 4rem;
-    justify-content: space-around;
-    justify-items: center;
-    row-gap: 4rem;
+.card:hover > .back {
+  transform: rotateY(0deg);
+}
+.card:hover > .front {
+  transform: rotateY(-180deg);
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  /* grid-gap: 4rem; */
+  justify-content: space-around;
+  justify-items: center;
+  /* row-gap: 4rem; */
 }
