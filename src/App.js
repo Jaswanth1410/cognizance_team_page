@@ -1,6 +1,6 @@
-import React from 'react';
-// import './App.css';
-import Team from './Components/Pages/Team.js';
+import React from "react";
+import './App.css';
+import Team from "./Components/Pages/Team.js";
 
 function App() {
   return (
