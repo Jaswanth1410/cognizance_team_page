@@ -26,7 +26,7 @@ const FlipCard = (con) => {
       </div>
       
     </div>
-    {openModel && <Modal
+    {isModalOpen && <Modal
             src={con.src}
             name={con.name}
             post={con.post}
