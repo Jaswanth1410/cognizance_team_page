@@ -204,7 +204,6 @@ const Team = () => {
             <FlipCard key={con.id} src={con.src} name = {con.name} />
           ))}
     </div>
-    
   )
 }
 
