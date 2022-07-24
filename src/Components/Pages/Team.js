@@ -33,6 +33,10 @@ import img29 from "../Images/Vignesh.jpg";
 import img30 from "../Images/sudiptha.jpg";
 import img31 from "../Images/Aniket Mishra.jpg";
 import img32 from "../Images/Paritosh.jpg";
+// import mail from "../Images/mail.png";
+// import gitHub from "../Images/github.png";
+// import linkedIn from "../Images/linkedin.png";
+// import instagram from "../Images/instagram.png";
 
 const Team = () => {
   let content = [
@@ -40,7 +44,7 @@ const Team = () => {
       id: 1,
       src: img1,
       name: "Dr. A G Sreedevi",
-      post: "Admin",
+      post: "Advisor",
       desc: "",
       mail: "",
       gitHub: "",
@@ -423,7 +427,18 @@ const Team = () => {
   return (
     <div className="team">
       {content.map((con) => (
-        <FlipCard key={con.id} src={con.src} name={con.name} post={con.post} />
+        <FlipCard
+          key={con.id}
+          src={con.src}
+          name={con.name}
+          post={con.post}
+          dom={con.dom}
+          desc={con.desc}
+          mail={con.mail}
+          gitHub={con.gitHub}
+          linkedIn={con.linkIn}
+          insta={con.insta}
+        />
       ))}
     </div>
   );
