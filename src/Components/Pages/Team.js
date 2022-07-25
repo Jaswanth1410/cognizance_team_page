@@ -1,5 +1,5 @@
 import React from "react";
-import FlipCard from "./FlipCard";
+import Card from "./Card.js";
 import "./Team.css";
 import img1 from "../Images/sreedevi.jpg";
 import img2 from "../Images/sanjay t.jpg";
@@ -33,10 +33,6 @@ import img29 from "../Images/Vignesh.jpg";
 import img30 from "../Images/sudiptha.jpg";
 import img31 from "../Images/Aniket Mishra.jpg";
 import img32 from "../Images/Paritosh.jpg";
-// import mail from "../Images/mail.png";
-// import gitHub from "../Images/github.png";
-// import linkedIn from "../Images/linkedin.png";
-// import instagram from "../Images/instagram.png";
 
 const Team = () => {
   let content = [
@@ -236,10 +232,10 @@ const Team = () => {
       name: "Dhanvinesh K",
       post: "Mentor",
       dom: "Open Source",
-      desc: "I am Dhanvinesh pursuing BTech Computer Science with Cybersecurity specialization (3rd year). I am one of the mentors of Cybersecurity domain and also a member of Opensource. I have experience in UI design and I am a Full-stack developer (Learning more in backend tbh). I have been participating in some hackathons and web development related workshops. I've experience in working with frameworks like Django, Vue, Flask, Firebase and some more frameworks. I have been participating in a lot of CTFs and cybersecurity conferences for the past two years. Also am a part of Team Cyber0ids previously Parallel Flags and Reapers. I've experience in Web exploitation, Forensics, Networking, OSINT and some Cryptography and Penetration testing.  I feel glad to teach you guys and also gain knowledge from you guys. ",
+      desc: "I am Dhanvinesh pursuing BTech Computer Science with Cybersecurity specialization (3rd year). I am one of the mentors of Cybersecurity domain and also a member of Opensource. I have experience in UI design and I am a Full-stack developer. I've experience in working with frameworks like Django, Vue, Flask, Firebase and some more frameworks. I've experience in Web exploitation, Forensics, Networking, OSINT and some Cryptography and Penetration testing.",
       mail: "dhanvineshk2003@gmail.com",
       gitHub: "https://github.com/Reaper-Dhan",
-      linkIn: "www.linkedin.com/in/reaperdhan",
+      linkIn: "https://www.linkedin.com/in/reaperdhan",
       insta: "https://www.instagram.com/_.r34p3r_dhan._/",
     },
     {
@@ -427,7 +423,7 @@ const Team = () => {
   return (
     <div className="team">
       {content.map((con) => (
-        <FlipCard
+        <Card
           key={con.id}
           src={con.src}
           name={con.name}
@@ -437,7 +433,7 @@ const Team = () => {
           mail={con.mail}
           gitHub={con.gitHub}
           linkedIn={con.linkIn}
-          insta={con.insta}
+          instagram={con.insta}
         />
       ))}
     </div>
