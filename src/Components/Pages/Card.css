@@ -1,0 +1,117 @@
+.card {
+  position: sticky;
+  width: 300px;
+  height: 90px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  margin-top: 12em;
+  cursor: pointer;
+}
+.card:hover {
+  height: 400px;
+  margin-bottom: -10em;
+  transform: translateY(-120px);
+}
+.imgbox {
+  position: absolute;
+  left: 50%;
+  top: -170px;
+  transform: translateX(-50%);
+  width: 240px;
+  height: 220px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+.card:hover .imgbox {
+  position: absolute;
+  left: 25%;
+  top: -60px;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  transition: 0.5s;
+}
+.imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.card .content .details {
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  transition: 0.8s;
+  transform: translateY(340px);
+}
+.card:hover .content .details {
+  transform: translateY(0px);
+}
+
+.card .content .details h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2em;
+}
+.card:hover .content .details h2 {
+  top: -50px;
+  text-align: right;
+}
+.card .content .details h2 span {
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+.card .content .details .data p {
+  font-size: 12px;
+  font-weight: normal !important;
+  text-align: justify;
+  padding: 5px 0px;
+  margin-top: 12px;
+  /* transition: 1s;
+      transition-timing-function: linear; */
+}
+/* .card .content .details .data .member_socials {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding-top: 25px;
+}
+.card .content .details .data .member_socials li a {
+  padding: 5px 7px;
+  border-radius: 25px;
+  border: 2px solid black;
+  font-size: 20px;
+  color: black;
+} */
+
+.Media_icons {
+  margin-top: 1.8rem;
+}
+.Media_icons ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Media_icons ul li {
+  list-style: none;
+  outline: none;
+  border-radius: 100%;
+  padding: 0.6rem;
+  /* margin-right: 2rem; */
+}
